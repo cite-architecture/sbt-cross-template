@@ -19,9 +19,18 @@ Implemented:
 
 OS: Mac OS 10.14.6
 
-sbtVersion: 1.3.0
+Output of `sbt sbtVersion`:
 
-jdk:
+```
+[info] crossedJS / sbtVersion
+[info] 	1.3.0
+[info] crossedJVM / sbtVersion
+[info] 	1.3.0
+[info] sbtVersion
+[info] 	1.3.0
+```
+
+Output of `java -version`:
 
 ```
 openjdk version "11.0.5" 2019-10-15
