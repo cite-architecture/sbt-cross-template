@@ -10,4 +10,9 @@ import wvlet.log._
 import scala.scalajs.js.annotation._
 
 @JSExportAll
-case class CrossedClass(name: String) extends LogSupport
+case class CrossedClass(name: String) extends LogSupport {
+  info("Created CrossedClass object")
+  if (name.size > 10) {
+    warn(s"${name} seems like a long name!")
+  }
+}
