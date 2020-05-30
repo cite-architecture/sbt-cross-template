@@ -9,11 +9,7 @@ Implemented:
 - unit testing of all code (shared, JVM- and JS-specific)
 - correct exports to mains running in both JVM and JS branches
 - live documentation generated with `mdoc` in `crossed.jvm` project
-
-Not yet implemented:
-
 - publication to bintray
-
 
 
 
