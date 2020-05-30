@@ -6,12 +6,12 @@
 Implemented:
 
 - cross-compilation, to both JVM and ScalaJS, and to more than one version of Scala
-
+- unit testing of all code (shared, JVM- and JS-specific)
+- correct exports to mains running in both JVM and JS branches
+- live documentation generated with `mdoc` in `crossed.jvm` project
 
 Not yet implemented:
 
-- unit testing of all code (shared, JVM- and JS-specific)
-- live documentation generated with `mdoc`
 - publication to bintray
 
 
