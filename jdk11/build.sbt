@@ -3,8 +3,6 @@ lazy val scala211 = "2.11.12"
 lazy val scala212 = "2.12.10"
 lazy val supportedScalaVersions = List(scala212, scala211)
 
-
-ThisBuild / version      := "0.1.0-SNAPSHOT"
 ThisBuild / scalaVersion := scala212
 
 lazy val root = (project in file("."))
@@ -12,11 +10,7 @@ lazy val root = (project in file("."))
   .settings(
     // crossScalaVersions must be set to Nil on the aggregating project
     crossScalaVersions := Nil,
-    publish / skip := true,
-    organization := "edu.holycross.shot",
-    name := "template",
-    version := "2.0.0",
-    licenses += ("GPL-3.0",url("https://opensource.org/licenses/gpl-3.0.html"))
+    publish / skip := true
   )
 
 lazy val crossed = crossProject(JSPlatform, JVMPlatform).in(file(".")).
@@ -24,6 +18,9 @@ lazy val crossed = crossProject(JSPlatform, JVMPlatform).in(file(".")).
   settings(
     name := "foo",
     version := "0.1-SNAPSHOT",
+    licenses += ("GPL-3.0",url("https://opensource.org/licenses/gpl-3.0.html")),
+
+    resolvers += Resolver.jcenterRepo,
     libraryDependencies ++= Seq(
       "org.scalatest" %%% "scalatest" % "3.1.2" % "test",
       "org.wvlet.airframe" %%% "airframe-log" % "20.5.2"
