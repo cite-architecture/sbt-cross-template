@@ -23,7 +23,9 @@ lazy val crossed = crossProject(JSPlatform, JVMPlatform).in(file(".")).
     resolvers += Resolver.jcenterRepo,
     libraryDependencies ++= Seq(
       "org.scalatest" %%% "scalatest" % "3.1.2" % "test",
-      "org.wvlet.airframe" %%% "airframe-log" % "20.5.2"
+      "org.wvlet.airframe" %%% "airframe-log" % "20.5.2",
+
+      "edu.holycross.shot.cite" %%% "xcite" % "4.3.0"
     )
   ).
   jvmSettings(

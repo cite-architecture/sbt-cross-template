@@ -1,4 +1,6 @@
 
+## Template sbt project for CITE architecture projects
+
 Guide to `CrossedClass`.
 
 

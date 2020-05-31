@@ -6,6 +6,7 @@ import wvlet.log._
 // JVM only:
 // import wvlet.log.LogFormatter.SourceCodeLogFormatter
 
+import edu.holycross.shot.cite._
 
 import scala.scalajs.js.annotation._
 
@@ -15,4 +16,6 @@ case class CrossedClass(name: String) extends LogSupport {
   if (name.size > 10) {
     warn(s"${name} seems like a long name!")
   }
+  // prove CITE libraries can be imported
+  val iliad = CtsUrn("urn:cts:greekLit:tlg0012.tlg001:")
 }
