@@ -10,4 +10,4 @@ Template files tested with specific versions of the JVM, and supporting:
 
 ## Template sets
 
-- [jdk11](./jdk11/):  for sbt 1.3.0 using JDK 11
+- [jdk11](./jdk11/):  for sbt 1.3.0 and ScalaJS 1.0.0, using JDK 11
